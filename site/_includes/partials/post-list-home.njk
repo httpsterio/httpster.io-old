@@ -8,20 +8,31 @@
       {% endif %}
       <ul class="l-post-stack" reversed>
         {% for item in postListItems %}
-          <li class="post-stack-item">
-            <{{postListHeadingLevel}} class="h4">
-              <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
-            </{{postListHeadingLevel}}>
-            <p>
-              <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-            </p>
-            {% if item.data.description %}
-              <p>{{item.data.description}}</p>
-            {% endif %}
-            {% if item.data.tags %}
-              <p>{{item.data.tags}}</p>
-            {% endif %}
-          </li>
+          <a href="{{ item.url }}">
+            <li class="post-stack-item offset">
+              <{{postListHeadingLevel}} class="h4">{{ item.data.title }}
+              </{{postListHeadingLevel}}>
+              <p>
+                <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+              </p>
+              {% if item.data.description %}
+                <p>{{item.data.description}}</p>
+              {% endif %}
+
+          {# {% if item.data.tags %}
+            <ul class="l-home-tags">
+              {% for item in item.data.tags %}
+                <li>
+                  <a class="home-tag" href="/tags/{{ item }}">
+                    {{ item }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %} #}
+
+            </li>
+          </a>
         {% endfor %}
       </ul>
     </div>

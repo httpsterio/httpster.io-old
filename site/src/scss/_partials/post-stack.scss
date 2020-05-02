@@ -1,4 +1,4 @@
-$l-stack-bp: 600px;
+$l-stack-bp: 900px;
 @media (min-width: $l-stack-bp) {
   .l-post-stack {
     --l-stack-flex-basis: calc(50% - #{$BASE_UNIT / 2});
@@ -10,6 +10,10 @@ $l-stack-bp: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .l-post-stack > * {
@@ -20,11 +24,12 @@ $l-stack-bp: 600px;
 
 .post-stack-item {
   list-style: none;
+  padding: 1rem;
 }
 
-.post-stack-item * + * {
-  margin-top: 0.25rem;
-}
+// .post-stack-item * + * {
+//   margin-top: 0.25rem;
+// }
 
 .post-stack-date {
   font-size: $SCALE--1;

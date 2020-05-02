@@ -10,6 +10,21 @@
   flex-wrap: wrap;
 }
 
+.l-home-tags {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.home-tag {
+  padding: 0.25rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .post-tag {
   display: inline-block;
   padding: 5px 10px;
@@ -20,6 +35,8 @@
   margin-right: 5px;
   margin-bottom: 10px;
 }
+
+
 
 .post-tag:hover,
 .post-tag:focus {

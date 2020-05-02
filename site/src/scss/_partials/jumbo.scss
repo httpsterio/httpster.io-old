@@ -18,8 +18,21 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.border-box:hover {
+// .border-box:hover {
 
-  box-shadow: 10px 10px 0px 0.2rem $COLOR_ACCENT;
-  transition: box-shadow 0.3s ease-in-out;
+//   box-shadow: 10px 10px 0px 0.2rem $COLOR_ACCENT;
+//   transition: box-shadow 0.3s ease-in-out;
+// }
+
+.offset {  
+  transition: 0.25s;
+  border: 5px solid black;
+  box-shadow: 
+    0.5rem 0.5rem 0 0 black;
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0.5rem -0.5rem 0 0 blue;
+  }
 }

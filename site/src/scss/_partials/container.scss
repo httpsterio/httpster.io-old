@@ -1,0 +1,19 @@
+$bp-container: 800px;
+
+.l-container {
+  --container-margin: #{$BASE_UNIT / 2};
+}
+
+@media (min-width: $bp-container) {
+  .l-container {
+    --container-margin: #{$BASE_UNIT};
+  }
+}
+
+.l-container {
+  margin: 0 var(--container-margin);
+}
+
+.l-measure {
+  max-width: 65ch;
+}

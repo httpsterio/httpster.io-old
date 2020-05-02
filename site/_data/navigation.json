@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/MikeRiethmuller",
+      "external": true
+    },
+    {
+      "text": "Feed",
+      "url": "/feed.xml",
+      "external": true
+    }
+  ]
+}

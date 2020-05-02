@@ -1,0 +1,36 @@
+{
+  "name": "supermaya",
+  "version": "1.0.0",
+  "description": "An Eleventy starter-kit designed to help you add rich features to a blog or website without the need for a complicated build process.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env ELEVENTY_ENV=development npx eleventy clean && eleventy --serve",
+    "build": "npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@tbranyen/jsdom": "^13.0.0",
+    "babel-loader": "^8.1.0",
+    "clean-css": "^4.2.3",
+    "critical": "^1.3.9",
+    "cross-env": "^7.0.2",
+    "css.escape": "^1.5.1",
+    "dotenv": "^8.2.0",
+    "html-minifier": "^4.0.0",
+    "lozad": "^1.14.0",
+    "memfs": "^3.1.2",
+    "node-sass": "^4.14.0",
+    "slugify": "^1.4.0",
+    "snarkdown": "^1.2.2",
+    "svg-inline-loader": "^0.8.2",
+    "terser-webpack-plugin": "^3.0.0",
+    "webpack": "^4.43.0"
+  }
+}

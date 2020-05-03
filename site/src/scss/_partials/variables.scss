@@ -6,20 +6,12 @@
   font-named-instance: 'Regular';
   src: url("/fonts/Inter-roman.var.woff2?v=3.13") format("woff2");
 }
-@font-face {
-  font-family: 'Inter var';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url("/fonts/Inter-italic.var.woff2?v=3.13") format("woff2");
-}
 
 
 $BASE_UNIT: 100px;
 
-$FONT_NORMAL: 'Inter var', sans-serif;
-$FONT_HEADINGS: 'Inter var', sans-serif;
+$FONT_NORMAL: 'Inter var', Helvetica, sans-serif;
+$FONT_HEADINGS: 'Inter var', Helvetica, sans-serif;
 $FONT_MONO: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
 $RATIO: 1.4;

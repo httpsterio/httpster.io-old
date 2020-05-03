@@ -4,12 +4,12 @@ const CACHE_KEY = `supermaya-${process.env.BUILD_ID}`;
 const EXCLUDED_URLS = [];
 
 // URLS that we want to be cached when the worker is installed
-const PRE_CACHE = ["/", "/posts"];
+const PRE_CACHE = ["/", "/posts", "/fonts/Inter.otf"];
 
 // You might want to bypass a certain host
 const IGNORED_HOSTS = ["localhost"];
 
-const addToCache = function(items) {
+const addToCache = function (items) {
   caches.open(CACHE_KEY).then(cache => cache.addAll(items));
 };
 

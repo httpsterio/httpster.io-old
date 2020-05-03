@@ -48,6 +48,7 @@ module.exports = function (config) {
 
   // Passthrough
   config.addPassthroughCopy({ "site/static": "/" });
+  config.addPassthroughCopy({ "site/src/fonts": "/fonts" });
 
   // Plugins
   config.addPlugin(rssPlugin);
@@ -57,6 +58,7 @@ module.exports = function (config) {
   if (config.addWatchTarget) {
     config.addWatchTarget("site/src/scss");
     config.addWatchTarget("site/src/js");
+    config.addWatchTarget("site/src/fonts");
   } else {
     console.log(
       "A future version of 11ty will allow live-reloading of JS and Sass. You can update 11ty with the next release to get these features."

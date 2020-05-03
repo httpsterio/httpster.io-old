@@ -6,13 +6,13 @@
       "external": false
     },
     {
-      "text": "Posts",
+      "text": "Blog",
       "url": "/posts",
       "external": false
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/MikeRiethmuller",
+      "url": "https://twitter.com/httpsterio",
       "external": true
     },
     {

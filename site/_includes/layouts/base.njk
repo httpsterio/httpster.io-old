@@ -54,9 +54,10 @@
   </head>
   <body>
     <a class="visually-hidden skip-content" href="#main-content">Skip to content</a>
-    <div class="l-page">
+
+    {# <div class="l-page">
       {% include "partials/global/site-head.njk" %}
-      <main id="main-content" tabindex="-1">
+      <main id="main-content" tabindex="-1" style="background-color: red;">
         <div class="l-stack l-stack--large">
           {% block content %}{% endblock content %}
           {% block foot %}
@@ -64,13 +65,30 @@
           {% endblock %}
         </div>
       </main>
+    </div> #}
+
+    <div class="theme-primary theme-bg theme-color">
+      <div class="l-page-section">
+        {% include "partials/global/site-head.njk" %}
+        {% block intro %}{% endblock intro %}
+      </div>
     </div>
+
+    <main tabindex="-1">
+      {% block content %}{% endblock content %}
+      {% block foot %}
+        {% include "partials/global/site-foot.njk" %}
+      {% endblock %}
+    </main>
+
     <script type="text/javascript" src="/js/service-worker.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
+
     {% if extra_js %}
       {% for item in extra_js %}
         <script type="text/javascript" src="{{item}}"></script>
       {% endfor %}
     {% endif %}
+
   </body>
 </html>

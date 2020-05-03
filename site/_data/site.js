@@ -1,11 +1,11 @@
 module.exports = {
-  name: "Supermaya",
+  name: "httpster.io",
   shortDesc:
-    "An 11ty starter kit designed to help you add rich features to a site without a complicated build process.",
+    "Sami is a digital native indieweb jargon generator",
   url: "",
-  authorEmail: "mike@madebymike.com.au",
-  authorHandle: "@MikeRiethmuller",
-  authorName: "Mike",
+  authorEmail: "sami@httpster.io",
+  authorHandle: "@httpsterio",
+  authorName: "Sami",
   postsPerPage: 4,
   socialImage: "/img/social.jpg",
   theme: {
@@ -15,8 +15,8 @@ module.exports = {
       highlight: "#666",
     },
     secondary: {
-      background: "white",
-      text: "black",
+      background: "black",
+      text: "white",
       highlight: "#666",
     },
   },

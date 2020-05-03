@@ -70,13 +70,13 @@ textarea::-webkit-input-placeholder {
 img {
   max-width: 100%;
 }
-// @media (prefers-reduced-motion: reduce) {
-//   * {
-//     animation-play-state: paused !important;
-//     transition: none !important;
-//     scroll-behavior: auto !important;
-//   }
-// }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 :focus {
   outline: 2px dashed $COLOR_MID;

@@ -6,7 +6,7 @@
           <div class="l-stack">
             <div class="l-site-name l-site-name--footer">
               {% include "partials/icons/logo.svg" %}
-              <div class="l-site-title site-title">{{ site.name }}</div>
+              <div class="l-site-title site-title"><a href="{{site.url}}">{{ site.name }}</a></div>
             </div>
             {% if site.shortDesc %}
               <p>{{ site.shortDesc }}</p>
@@ -17,9 +17,6 @@
             {% include "partials/nav.njk" %}
           </div>
         </div>
-        <p class="powered-by">Made by
-          {{site.authorName}}
-          with 11ty</p>
       </div>
     </div>
   </div>

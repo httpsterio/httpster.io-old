@@ -1,0 +1,69 @@
+{% extends 'layouts/base.njk' %}
+
+{% set authorName = author if author else site.authorName %}
+
+{% set introSummary %}
+<div class="l-stack">
+  {% if description %}
+    <p class="post-description">{{ description | safe }}</p>
+  {% endif %}
+  <p class="post-meta">
+    {% if date %}
+      Posted by {{ authorName }}
+      on <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+    {% endif %} (about a {{ helpers.getReadingTime(content) }} minute read).
+  </p>
+</div>
+{% endset %}
+
+
+{% set articleFooter %}
+  <footer class="l-stack">
+    {% if tags %}
+      <h2>Tags</h2>
+    {% endif %}
+    <div class="l-post-footer">
+      {% if tags %}
+        <ul class="l-post-tags">
+          {% for item in tags %}
+            <li>
+              <a class="post-tag" href="/tags/{{ item }}">{{ item }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </footer>
+{% endset %}
+
+{% block content %}
+  <div class="l-stack">
+
+    <article class="h-entry t-page" class="l-container">
+      <div class="l-stack l-stack--large">
+        
+        <div class="theme-secondary theme-color">
+          <div class="l-page">
+            {% include "partials/post-intro.njk" %}
+          </div>
+        </div>
+        
+        <div class="theme-mute theme-bg theme-color">
+          <div class="l-page">
+            <div class="l-container">
+              <div class="l-stack l-measure" >
+                {{ content | safe }}
+              </div>
+            </div>
+            <div class="l-container">
+              {{articleFooter| safe }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+
+{% endblock %}

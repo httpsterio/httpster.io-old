@@ -1,10 +1,10 @@
 {% set navLandmark = 'nav' if navLocation === 'primary' else 
   'div' %}
 
-{% if navigation.items %}
+{% if navigationItems %}
   <{{navLandmark}}>
     <ul class="l-navigation navigation" aria-label="{{ ariaNavLabel }}">
-      {% for item in navigation.items %}
+      {% for item in navigationItems %}
         {% set externalAttribute = '' %}
         {% set currentAttribute = '' %}
 
@@ -23,6 +23,13 @@
         </li>
       {% endfor %}
 
-    </ul >
-  </{{navlandmark}}>
-{% endif %}
+      {% if site.keystone.login and navLocation === 'primary' %}
+        <li>
+          <a href="/login" class="l-login" id="keystone-nav-login">
+          Login{% include "partials/icons/login.svg" %}
+          </a>
+        </li>
+        {% endif%}
+      </ul >
+    </{{navLandmark}}>
+  {% endif %}

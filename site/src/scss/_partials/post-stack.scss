@@ -27,9 +27,9 @@ $l-stack-bp: 900px;
   padding: 1rem;
 }
 
-// .post-stack-item * + * {
-//   margin-top: 0.25rem;
-// }
+.post-stack-item * + * {
+  margin-top: 0.25rem;
+}
 
 .post-stack-date {
   font-size: $SCALE--1;

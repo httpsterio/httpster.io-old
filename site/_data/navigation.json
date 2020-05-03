@@ -1,5 +1,5 @@
 {
-  "items": [
+  "header": [
     {
       "text": "Home",
       "url": "/",
@@ -7,7 +7,24 @@
     },
     {
       "text": "Blog",
-      "url": "/posts",
+      "url": "/blog",
+      "external": false
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/httpsterio",
+      "external": true
+    }
+  ],
+  "footer": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Blog",
+      "url": "/blog",
       "external": false
     },
     {

@@ -1,12 +1,12 @@
 <footer role="contentinfo">
-  <div class="theme-secondary theme-bg theme-color">
+  <div class="theme">
     <div class="l-container">
       <div class="l-site-footer">
         <div class="l-site-footer-split">
           <div class="l-stack">
             <div class="l-site-name l-site-name--footer">
               {% include "partials/icons/logo.svg" %}
-              <div class="l-site-title site-title"><a href="{{site.url}}">{{ site.name }}</a></div>
+              <div class="l-site-title site-title">{{ site.name }}</div>
             </div>
             {% if site.shortDesc %}
               <p>{{ site.shortDesc }}</p>
@@ -14,10 +14,12 @@
           </div>
           <div class="l-footer-nav">
             {% set navLocation = 'footer' %}
+            {% set navigationItems = navigation.footer %}
             {% include "partials/nav.njk" %}
           </div>
         </div>
+        <p class="powered-by">Made by {{site.authorName}} with 11ty and Keystone</p>
       </div>
     </div>
   </div>
-</footer>
+</footer> 

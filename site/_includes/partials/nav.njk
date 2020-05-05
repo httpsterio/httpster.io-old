@@ -5,20 +5,20 @@
   <{{navLandmark}}>
     <ul class="l-navigation navigation" aria-label="{{ ariaNavLabel }}">
       {% for item in navigationItems %}
-{% set externalAttribute = '' %}
-{% set currentAttribute = '' %}
-{% if item.external %}
-{% set externalAttribute = ' rel="external"' %}
-{% endif %}
-{% if page.url == item.url %}
-{% set currentAttribute = ' aria-current="page"' %}
-{% endif %}
-<li>
-<a href="{{ item.url }}" {{ externalAttribute | safe }} {{ currentAttribute | safe }}>
-{{ item.text }}
-</a>
-</li>
-{% endfor %}
-</ul >
-</{{navLandmark}}>
-{% endif %}
+        {% set externalAttribute = '' %}
+        {% set currentAttribute = '' %}
+        {% if item.external %}
+          {% set externalAttribute = ' rel="external"' %}
+        {% endif %}
+        {% if page.url == item.url %}
+          {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+        <li>
+          <a href="{{ item.url }}" {{ externalAttribute | safe }} {{ currentAttribute | safe }}>
+            {{ item.text }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul >
+    </{{navLandmark}}>
+  {% endif %}

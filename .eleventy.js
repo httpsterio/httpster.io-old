@@ -24,6 +24,7 @@ module.exports = function (config) {
   config.addTransform("parse", parseTransform);
   if (site.criticalCSS) {
     config.addTransform("critical-css", criticalCSSTransform);
+    config.addTransform("htmlmin", htmlMinTransform);
   } else {
     // Critical will also minify
     config.addTransform("htmlmin", htmlMinTransform);

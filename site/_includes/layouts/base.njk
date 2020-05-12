@@ -54,7 +54,8 @@
     </style>
     {% endif %}
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+
 
     {% if extra_css %}
       {% for item in extra_css %}

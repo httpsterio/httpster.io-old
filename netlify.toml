@@ -2,4 +2,8 @@
   NODE_ENV = "production"
   command = "npm run build"
   publish = "dist"
-[template.environment]
+[context.branch-deploy]
+  command = "npm run build"
+  publish = "dist"
+[context.branch-deploy.environment]
+  NODE_ENV = "production"

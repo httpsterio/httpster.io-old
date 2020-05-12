@@ -10,24 +10,24 @@ module.exports = {
   socialImage: "/img/social.jpg",
   theme: {
     primary: {
-      background: "#c9f3e0",
-      text: "#333",
-      highlight: "#555",
+      background: "white",
+      text: "#212121",
+      highlight: "#fd205a",
     },
     secondary: {
-      background: "white",
-      text: "#244e3b",
-      highlight: "#244e3b",
+      background: "#fbffec",
+      text: "#fd205a",
+      highlight: "ocean",
     },
     mute: {
-      background: "#fbfbfb",
-      text: "#555",
-      highlight: "#244e3b",
+      background: "white",
+      text: "slate",
+      highlight: "black",
     },
   },
 
   // Critical CSS results in much slower build times and uses a lot of system resources
   // turn on in production :)
   // See `site/transforms/critical-css-transform.js` for more details
-  criticalCSS: true,
+  criticalCSS: process.env.NODE_ENV === "production",
 };

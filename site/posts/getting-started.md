@@ -5,7 +5,7 @@ description: "Supermaya is an Eleventy starter kit designed to help you add rich
 tags:
   - demo-content
   - sample-post
-  - blog
+  - blogpost
 ---
 
 It comes with all the blog standard features:
@@ -131,4 +131,4 @@ site/_data/site.js
 
 A friend and designer Matt Barron, helped me out with some initial design work and used it as a placeholder for the site name in early mock-ups. As usual development names grow on you. I later learned it was the name of his family dog. It's a combination of Superman and Maya, one of his kids favourite cartoon characters. That settles it, right? And here's a picture:
 
-<img src="/supermaya.jpg" width="600"/>
+<img src="/supermaya.jpg" width="600" alt="ugly dog"/>

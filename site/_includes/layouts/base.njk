@@ -67,7 +67,7 @@
 
   </head>
   <body class="{% if pageTheme %}theme-{{pageTheme}}{% endif %}">
-    <a role="navigation" aria-label="skip-link" class="visually-hidden skip-content" href="#main-content">Skip to content</a>
+    <a href="#main-content" class="skip-content">Skip to Content</a>
   
     <div class="theme-secondary theme-bg theme-color">
       <div class="l-page-section">
@@ -76,14 +76,14 @@
       </div>
     </div>
 
-    <main tabindex="-1">
+    <main tabindex="-1" id="main-content">
       {% block content %}{% endblock content %}
       {% block foot %}
         {% include "partials/global/site-foot.njk" %}
       {% endblock %}
     </main>
 
-    <script type="text/javascript" src="/js/service-worker.js"></script>
+    <!--<script type="text/javascript" src="/js/service-worker.js"></script>-->
     <script type="text/javascript" src="/js/main.js"></script>
     {% if extra_js %}
       {% for item in extra_js %}

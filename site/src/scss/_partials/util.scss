@@ -1,12 +1,11 @@
-.visually-hidden {
-  clip: rect(1 1 1 1);
+.skip-content:not(:focus) {
+  clip: rect(0 0 0 0);
   height: auto;
   margin: 0;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-  background-color: black;
+  width: 10px;
   white-space: nowrap;
 }
 

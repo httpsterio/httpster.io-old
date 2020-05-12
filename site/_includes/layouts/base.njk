@@ -15,7 +15,6 @@
     
     {% if site.theme %}
     <style>
-      .theme-secondary,
       :root {
         {% if site.theme.secondary.background %}
           --THEME_BACKGROUND: {{site.theme.primary.background}};
@@ -27,7 +26,6 @@
           --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
         {% endif %}
       }
-
       .theme-secondary {
         {% if site.theme.secondary.background %}
           --THEME_BACKGROUND: {{site.theme.secondary.background}};
@@ -37,18 +35,6 @@
         {% endif %}
         {% if site.theme.secondary.highlight %}
           --THEME_HIGHLIGHT: {{site.theme.secondary.highlight}};
-        {% endif %}
-      }
-      
-      .theme-mute {
-        {% if site.theme.mute.background %}
-          --THEME_BACKGROUND: {{site.theme.mute.background}};
-        {% endif %}
-        {% if site.theme.mute.text %}
-          --THEME_COLOR: {{site.theme.mute.text}};
-        {% endif %}
-        {% if site.theme.mute.highlight %}
-          --THEME_HIGHLIGHT: {{site.theme.mute.highlight}};
         {% endif %}
       }
     </style>

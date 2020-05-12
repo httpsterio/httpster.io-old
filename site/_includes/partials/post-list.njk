@@ -6,11 +6,11 @@
       {% if postListHeading %}
         <h2 class="h4">{{ postListHeading }}</h2>
       {% endif %}
-      <ul class="l-post-list" reversed>
+      <div class="l-post-list">
         {% for item in postListItems %}
-          <li class="post-stack-item">
+          <article class="post-stack-item">
             <{{postListHeadingLevel}} class="h3">
-              <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+              <a href="{{ item.url }}">{{ item.data.title }}</a>
             </{{postListHeadingLevel}}>
             <p>
               <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
@@ -18,12 +18,11 @@
             <p>
               {% if item.data.description %}
                 {{item.data.description}}
-                <a href="{{ item.url }}" aria-hidden="true" class="read-more">Read more</a>
               {% endif %}
             </p>
-          </li>
+          </article>
         {% endfor %}
-      </ul>
+      </div>
     </div>
   </section>
 {% endif %}

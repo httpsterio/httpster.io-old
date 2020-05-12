@@ -11,18 +11,13 @@ module.exports = {
   theme: {
     primary: {
       background: "white",
-      text: "#212121",
-      highlight: "#fd205a",
+      text: "black",
+      highlight: "#666",
     },
     secondary: {
-      background: "#fbffec",
-      text: "#fd205a",
-      highlight: "ocean",
-    },
-    mute: {
-      background: "white",
-      text: "slate",
-      highlight: "black",
+      background: "black",
+      text: "white",
+      highlight: "#666",
     },
   },
 

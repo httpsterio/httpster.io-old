@@ -6,10 +6,10 @@
       {% if postListHeading %}
         <h2 class="h3">{{ postListHeading }}</h2>
       {% endif %}
-      <ul class="l-post-stack" reversed>
+      <div class="l-post-stack">
         {% for item in postListItems %}
-          <a href="{{ item.url }}">
-            <li class="post-stack-item offset">
+          <a href="{{ item.url }}" aria-label="Read blog post {{ item.data.title }}">
+            <article class="post-stack-item offset">
               <{{postListHeadingLevel}} class="h4">{{ item.data.title }}
               </{{postListHeadingLevel}}>
               <p>
@@ -31,10 +31,10 @@
             </ul>
           {% endif %} #}
 
-            </li>
+            </article>
           </a>
         {% endfor %}
-      </ul>
+      </div>
     </div>
   </section>
 {% endif %}

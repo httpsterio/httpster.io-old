@@ -13,6 +13,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml"/>
 
+
+    <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
     <meta name="theme-color" content="#000000"/>
     {% if site.font %}<link rel="preload" href="{{site.font}}" as="font" crossorigin> {% endif %}
 
@@ -73,7 +75,7 @@
       {% endblock %}
     </main>
 
-    <!--<script type="text/javascript" src="/js/service-worker.js"></script>-->
+    <script type="text/javascript" src="/js/service-worker.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
     {% if extra_js %}
       {% for item in extra_js %}

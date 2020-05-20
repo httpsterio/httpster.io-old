@@ -13,8 +13,7 @@ const addToCache = function (items) {
   caches.open(CACHE_KEY).then(cache => cache.addAll(items));
 };
 
-self.addEventListener("install", (event) => {
-  console.log('👷', 'install', event);
+self.addEventListener("install", () => {
   self.skipWaiting();
 });
 

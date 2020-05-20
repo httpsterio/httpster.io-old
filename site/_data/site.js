@@ -3,6 +3,7 @@ module.exports = {
   shortDesc:
     "Sami is a digital native indieweb jargon generator",
   url: "",
+  font: "/fonts/Inter-roman.var-subset.woff2?v=3.13",
   authorEmail: "sami@httpster.io",
   authorHandle: "@httpsterio",
   authorName: "Sami",

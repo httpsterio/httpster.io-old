@@ -24,5 +24,5 @@ module.exports = {
   // Critical CSS results in much slower build times and uses a lot of system resources
   // turn on in production :)
   // See `site/transforms/critical-css-transform.js` for more details
-  criticalCSS: process.env.NODE_ENV === "production",
+  criticalCSS: false,
 };

@@ -21,6 +21,8 @@ module.exports = {
       highlight: "#666",
     },
   },
+  //toggling service worker
+  sw: true,
 
   // Critical CSS results in much slower build times and uses a lot of system resources
   // turn on in production :)

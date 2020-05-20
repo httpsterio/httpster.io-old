@@ -1,22 +1,19 @@
-const CACHE_KEY = `supermaya-${process.env.BUILD_ID}`;
-
 // URLS that we don’t want to end up in the cache
 const EXCLUDED_URLS = [];
 
 // URLS that we want to be cached when the worker is installed
 const PRE_CACHE = ["/", "/posts", "/fonts/Inter-roman.var-subset.woff2?v=3.13"];
-// const PRE_CACHE = ["/", "/posts", "/fonts/Inter-roman.var.woff2?v=3.13"];
 
 // You might want to bypass a certain host
-const IGNORED_HOSTS = ["localhost"];
+const IGNORED_HOSTS = [];
 
 const addToCache = function (items) {
   caches.open(CACHE_KEY).then(cache => cache.addAll(items));
 };
 
 self.addEventListener("install", () => {
+  console.log('👷', 'install', event);
   self.skipWaiting();
-  addToCache(CACHE_KEY, PRE_CACHE);
 });
 
 self.addEventListener("activate", evt => {
@@ -43,6 +40,7 @@ self.addEventListener("activate", evt => {
 self.addEventListener("fetch", event => {
   // Ignore hosts
   const { hostname } = new URL(event.request.url);
+  event.respondWith(fetch(event.request));
   if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
     return;
   }

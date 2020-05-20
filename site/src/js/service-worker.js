@@ -1,3 +1,5 @@
+const CACHE_KEY = `httpster-${process.env.BUILD_ID}`;
+
 // URLS that we don’t want to end up in the cache
 const EXCLUDED_URLS = [];
 

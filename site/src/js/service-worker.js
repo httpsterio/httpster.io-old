@@ -64,7 +64,7 @@ self.addEventListener("fetch", event => {
   });
 });
 
-window.addEventListener('beforeinstallprompt', (event) => {
+self.addEventListener('beforeinstallprompt', (event) => {
   console.log('👍', 'beforeinstallprompt', event);
   // Stash the event so it can be triggered later.
   window.deferredPrompt = event;

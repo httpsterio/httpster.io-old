@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD:site/posts/third-one.md
 title: Third post
-=======
-title: article-5
->>>>>>> dev:site/posts/article-5.md
 date: "2019-11-01"
 description: "Supermaya is an Eleventy starter kit designed to help you add rich features to a blog or website without the need for a complicated build process."
 tags:

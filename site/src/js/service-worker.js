@@ -92,6 +92,6 @@ self.addEventListener('click', () => {
   });
 });
 
-window.addEventListener('appinstalled', (event) => {
+self.addEventListener('appinstalled', (event) => {
   console.log('👍', 'appinstalled', event);
 });

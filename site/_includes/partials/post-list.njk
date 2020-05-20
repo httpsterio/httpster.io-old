@@ -6,9 +6,9 @@
       {% if postListHeading %}
         <h2 class="h4">{{ postListHeading }}</h2>
       {% endif %}
-      <ul class="l-post-list" reversed>
+      <div class="l-post-list">
         {% for item in postListItems %}
-          <li class="post-stack-item">
+          <article class="post-stack-item">
             <{{postListHeadingLevel}} class="h3">
               <a href="{{ item.url }}">{{ item.data.title }}</a>
             </{{postListHeadingLevel}}>
@@ -20,9 +20,9 @@
                 {{item.data.description}}
               {% endif %}
             </p>
-          </li>
+          </article>
         {% endfor %}
-      </ul>
+      </div>
     </div>
   </section>
 {% endif %}

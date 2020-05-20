@@ -23,7 +23,6 @@ body::before {
 }
 body::after { 
   content: '${CSS.escape(error)}'; 
-  white-space: pre;
   display: block;
   top: 0; 
   padding: 30px;

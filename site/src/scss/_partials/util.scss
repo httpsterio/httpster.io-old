@@ -39,22 +39,9 @@
   color: var(--THEME_HIGHTLIGHT, yellow);
 }
 
-.hidden {
-  display: none !important;
-}
-
-#installContainer {
-  position: absolute;
-  bottom: 1em;
-  display: flex;
+.pwa-banner {
+  align-content: center;
+  display: none;
   justify-content: center;
   width: 100%;
-}
-
-#installContainer button {
-  background-color: inherit;
-  border: 1px solid white;
-  color: white;
-  font-size: 1em;
-  padding: 0.75em;
 }

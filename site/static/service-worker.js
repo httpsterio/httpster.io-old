@@ -9,6 +9,9 @@ const PRE_CACHE = ["/", "/posts", "/fonts/Inter-roman.var-subset.woff2?v=3.13"];
 // You might want to bypass a certain host
 const IGNORED_HOSTS = [];
 
+const divInstall = self.getElementById('installContainer');
+const butInstall = self.getElementById('butInstall');
+
 const addToCache = function (items) {
   caches.open(CACHE_KEY).then(cache => cache.addAll(items));
 };

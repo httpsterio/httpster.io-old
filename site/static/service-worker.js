@@ -19,7 +19,7 @@ if (window.location.protocol === 'http:') {
   requireHTTPS.classList.remove('hidden');
 }
 
-const CACHE_KEY = `httpster-${process.env.BUILD_ID}`;
+const CACHE_KEY = `httpster-1`;
 
 // URLS that we don’t want to end up in the cache
 const EXCLUDED_URLS = [];

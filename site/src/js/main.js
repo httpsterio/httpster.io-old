@@ -1,5 +1,7 @@
 // Write your javascript here...
 // ES6 will be compiled with Webpack
+const divInstall = window.document.getElementById('installContainer');
+const butInstall = window.document.getElementById('butInstall');
 
 import lozad from "lozad";
 

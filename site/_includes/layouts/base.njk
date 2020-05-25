@@ -82,6 +82,7 @@
     {% endif %}
 
     {% if site.sw %}
+      <script type="text/javascript" src="/service-worker.js"></script>
       <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {

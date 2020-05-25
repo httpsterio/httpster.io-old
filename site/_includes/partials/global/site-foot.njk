@@ -1,5 +1,5 @@
 <footer>
-  <div class="theme">
+  <div class="theme-secondary theme-bg theme-color">
     <div class="l-container">
       <div class="l-site-footer">
         <div class="l-site-footer-split">
@@ -15,8 +15,13 @@
             {% include "partials/nav.njk" %}
           </div>
         </div>
-        <p class="powered-by">Made by {{site.authorName}} with 11ty and VS Code</p>
+        <p class="powered-by">Made by {{site.authorName}} with 11ty and VS Code.</p>
+    {% if site.sw %}
+    <div id="installContainer" class="hidden powered-by">
+      <button id="butInstall" class="pwa-button" type="button">PWA App</button>
+    </div>
+    {%endif%}
       </div>
     </div>
   </div>
-</footer> 
+</footer>

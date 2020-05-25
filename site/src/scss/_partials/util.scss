@@ -31,6 +31,7 @@
 .theme-bg {
   background: var(--THEME_BACKGROUND, white);
 }
+
 .theme-color {
   color: var(--THEME_COLOR, black);
 }
@@ -39,9 +40,37 @@
   color: var(--THEME_HIGHTLIGHT, yellow);
 }
 
-.pwa-banner {
-  align-content: center;
-  display: none;
-  justify-content: center;
-  width: 100%;
+.pwa-button {
+  text-align: center;
+  font-size: $SCALE--1;
+  font-weight: 700;
+  margin-top: $SCALE--1;
+  padding: $SCALE--2;
+  border: 0.2rem solid white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pwa-button {
+    transition: 0.25s;
+    background-color: black;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $COLOR_ACCENT;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offset {
+    box-shadow:
+      0.5rem 0.5rem 0 0 $COLOR_BLACK;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $COLOR_ACCENT;
+    }
+  }
 }

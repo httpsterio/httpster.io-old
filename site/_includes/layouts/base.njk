@@ -98,13 +98,13 @@
       }
       let deferredPrompt;
       window.addEventListener("beforeinstallprompt", a => {
-        a.preventDefault(), deferredPrompt = a, document.querySelector("#installBtn").addEventListener("click",
+        a.preventDefault(), deferredPrompt = a, document.querySelector("#butInstall").addEventListener("click",
         () => {
             deferredPrompt.prompt(), deferredPrompt.userChoice.then(a => {
               "accepted" === a.outcome ? console.log("User accepted the A2HS prompt") : console.log(
                 "User dismissed the A2HS prompt"), deferredPrompt = null
             })
-          }), document.querySelector("#installBanner").style.display = "flex"
+          })
       });
     </script>
     {% endif %}

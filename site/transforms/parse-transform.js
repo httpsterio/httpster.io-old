@@ -39,6 +39,7 @@ module.exports = function (value, outputPath) {
 
         image.setAttribute("loading", "lazy");
         image.setAttribute("data-src", image.src);
+        image.removeAttribute("src");
       });
     }
 

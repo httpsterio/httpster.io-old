@@ -46,6 +46,7 @@
   font-weight: 700;
   margin-top: $SCALE--1;
   padding: $SCALE--2;
+  justify-content: center;
   border: 0.2rem solid white;
 }
 
@@ -76,8 +77,10 @@
 }
 
 .pwa-banner {
+  display: flex;
   text-align: center;
   align-content: center;
+  align-items: center;
   font-size: $SCALE--1;
   display: none;
   font-weight: 700;

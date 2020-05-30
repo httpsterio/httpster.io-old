@@ -3,15 +3,17 @@ const precacheResources = [
   '/',
   'index.html',
   'css/main.css',
+  'fonts/Inter-roman.var-subset.woff2?v=3.13',
+  'blog/'
 ];
 
 self.addEventListener('install', event => {
   console.log('Service worker install event!');
   event.waitUntil(
     caches.open(cacheName)
-      .then(cache => {
-        return cache.addAll(precacheResources);
-      })
+    .then(cache => {
+      return cache.addAll(precacheResources);
+    })
   );
 });
 

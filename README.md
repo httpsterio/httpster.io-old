@@ -17,8 +17,14 @@ Todo:
 
 [ ] go through glyphs and add the required
 
-[ ] figure out why njk for-loops end up with whitespace from indentation
-
-[ ] fix netlify node_env in netlify.toml
-
 [ ] design and write?
+
+[ ] figcaptions in parse-transform broken if they have title? Fix upstream. Sets img url to null
+
+[ ] svg anchor imgs in headers doesn't accept ch units. change to pixes or omit width and go with ex for height
+
+Done: 
+
+[x] figure out why njk for-loops end up with whitespace from indentation
+
+[x] fix netlify node_env in netlify.toml

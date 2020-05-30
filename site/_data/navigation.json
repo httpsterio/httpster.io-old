@@ -1,6 +1,5 @@
 {
-  "header": [
-    {
+  "header": [{
       "text": "Home",
       "url": "/",
       "external": false
@@ -11,13 +10,17 @@
       "external": false
     },
     {
+      "text": "About",
+      "url": "/about",
+      "external": false
+    },
+    {
       "text": "Twitter",
       "url": "https://twitter.com/httpsterio",
       "external": true
     }
   ],
-  "footer": [
-    {
+  "footer": [{
       "text": "Home",
       "url": "/",
       "external": false

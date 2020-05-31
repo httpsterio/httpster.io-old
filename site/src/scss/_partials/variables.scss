@@ -3,16 +3,24 @@
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
-//  font-named-instance: 'Regular';
-  src: url("/fonts/Inter-roman.var-subset.woff2?v=3.13") format("woff2");
+  //  font-named-instance: 'Regular';
+  // src: url("/fonts/Inter-roman.var-subset.woff2?v=3.13") format("woff2");
 }
 
 
 $BASE_UNIT: 100px;
 
-$FONT_NORMAL: 'Inter var', Helvetica, sans-serif;
-$FONT_HEADINGS: 'Inter var', Helvetica, sans-serif;
-$FONT_MONO: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+$FONT_NORMAL: 'Inter var',
+Helvetica,
+sans-serif;
+$FONT_HEADINGS: 'Inter var',
+Helvetica,
+sans-serif;
+$FONT_MONO: Consolas,
+Monaco,
+"Andale Mono",
+"Ubuntu Mono",
+monospace;
 
 $RATIO: 1.4;
 

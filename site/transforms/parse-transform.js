@@ -23,6 +23,7 @@ module.exports = function (value, outputPath) {
         if (image.hasAttribute("title")) {
           const figure = document.createElement("figure");
           const figCaption = document.createElement("figcaption");
+          figCaption.classList.add('image-caption');
 
           figCaption.innerHTML = image.getAttribute("title");
 

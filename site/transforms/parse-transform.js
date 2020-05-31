@@ -23,15 +23,12 @@ module.exports = function (value, outputPath) {
         if (image.hasAttribute("title")) {
           const figure = document.createElement("figure");
           const figCaption = document.createElement("figcaption");
-          const imgUrl = image.getAttribute("src");
-          const newImg = image.cloneNode(true);
 
           figCaption.innerHTML = image.getAttribute("title");
 
           image.removeAttribute("title");
 
-          figure.appendChild(newImg);
-          newImg.setAttribute("src", imgUrl);
+          figure.appendChild(image.cloneNode(true));
           figure.appendChild(figCaption);
 
           image.replaceWith(figure);

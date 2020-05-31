@@ -79,8 +79,7 @@
     {% endif %}
 
     {% if site.sw %}
-      <script type="text/javascript" src="/service-worker.js"></script>
-      <script>
+      <script type="text/javascript" src="/js/service-worker.js">
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {
             navigator.serviceWorker.register('service-worker.js')

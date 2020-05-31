@@ -7,7 +7,7 @@
 {% set postListItems = collections.postFeed %}
 
 {# Posts link #}
-{% if postListItems.length < collections.blog.length %}
+{% if postListItems.length < collections.posts.length %}
   {% set paginationNextText = allPostsText %}
   {% set paginationNextUrl = '/blog' %}
 {% endif %}

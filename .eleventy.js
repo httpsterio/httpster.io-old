@@ -41,16 +41,22 @@ module.exports = function (config) {
 
   config.addCollection("postFeed", collection => {
     return [
-      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
-    ]
+        ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
+      ]
       .reverse()
       .slice(0, site.postsPerPage);
   });
 
   // Passthrough
-  config.addPassthroughCopy({ "site/static": "/" });
-  config.addPassthroughCopy({ "site/src/fonts": "/fonts" });
-  config.addPassthroughCopy({ "site/static/img": "/img" });
+  config.addPassthroughCopy({
+    "site/static": "/"
+  });
+  config.addPassthroughCopy({
+    "site/src/fonts": "/fonts"
+  });
+  config.addPassthroughCopy({
+    "site/static/img": "/img"
+  });
 
   // Plugins
   config.addPlugin(rssPlugin);

@@ -1,7 +1,6 @@
 module.exports = {
   name: "httpster.io",
-  shortDesc:
-    "Sami is a digital native indieweb jargon generator",
+  shortDesc: "Sami is a digital native indieweb jargon generator",
   url: "https://httpster.io",
   font: "/fonts/Inter-roman.var-subset.woff2?v=3.13",
   authorEmail: "sami@httpster.io",
@@ -22,7 +21,7 @@ module.exports = {
     },
   },
   //toggling service worker
-  sw: true,
+  sw: false,
 
   // Critical CSS results in much slower build times and uses a lot of system resources
   // turn on in production :)

@@ -1,22 +1,22 @@
 --- 
-title: Bloggin'
+title: Articles
 description: testing a description
 pagination: 
-  data: collections.posts
+  data: collections.article
   size: 5
-  alias: posts 
+  alias: article 
 ---
 
 {% extends 'layouts/base.njk' %}
 
 {# Intro content #}
-{% set introHeading %}Blog{% endset %}
+{% set introHeading %}Articles{% endset %}
 {% set introSummary = description %}
 
 {# Post list content #}
-{% set postListItems = posts %}
+{% set postListItems = article %}
 
-{% if postListItems.length < collections.posts.length %}
+{% if postListItems.length < collections.article.length %}
   {% set paginationNextUrl = pagination.nextPageHref %}
   {% set paginationPrevUrl = pagination.previousPageHref %}
 {% endif %}

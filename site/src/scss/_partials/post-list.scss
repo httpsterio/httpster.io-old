@@ -1,8 +1,8 @@
-.l-post-list > * {
-  max-width: 60ch;
+.l-post-list>* {
+  max-width: 80ch;
 }
 
-.l-post-list > * + * {
+.l-post-list>*+* {
   margin-top: 2rem;
 }
 
@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.l-post-intro > * + * {
+.l-post-intro>*+* {
   margin-top: 1rem;
 }
 

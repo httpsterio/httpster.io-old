@@ -32,16 +32,26 @@ module.exports = function (config) {
 
   // Custom collections
   const now = new Date();
-  const livePosts = post => post.date <= now && !post.data.draft;
-  config.addCollection("posts", collection => {
+
+  // Creates a const for all posts that are not drafts and publish date is either today or earlier.
+  const livePosts = article => article.date <= now && !article.data.draft;
+
+  config.addCollection("article", collection => {
     return [
-      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
+      ...collection.getFilteredByGlob("./site/article/*.md").filter(livePosts)
     ].reverse();
   });
 
+  config.addCollection("notes", collection => {
+    return [
+      ...collection.getFilteredByGlob("./site/notes/*.md").filter(livePosts)
+    ].reverse();
+  });
+
+  // TODO what is postfeed?
   config.addCollection("postFeed", collection => {
     return [
-        ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
+        ...collection.getFilteredByGlob("./site/article/*.md").filter(livePosts)
       ]
       .reverse()
       .slice(0, site.postsPerPage);

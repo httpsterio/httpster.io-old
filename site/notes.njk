@@ -1,0 +1,37 @@
+--- 
+title: Notes
+description: testing a description
+pagination: 
+  data: collections.notes
+  size: 5
+  alias: notes 
+---
+
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading %}Blog{% endset %}
+{% set introSummary = description %}
+
+{# Post list content #}
+{% set postListItems = notes %}
+
+{% if postListItems.length < collections.notes.length %}
+  {% set paginationNextUrl = pagination.nextPageHref %}
+  {% set paginationPrevUrl = pagination.previousPageHref %}
+{% endif %}
+
+{% block intro %}
+  <div class="l-stack l-stack--large">
+    {% include "partials/intro.njk" %}
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="l-page">
+    <div class="l-stack l-stack--large l-stack--large">
+      {% include "partials/note-list.njk" %}
+      {% include "partials/pagination.njk" %}
+    </div>
+  </div>
+{% endblock %}

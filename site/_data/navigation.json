@@ -5,8 +5,13 @@
       "external": false
     },
     {
-      "text": "Blog",
-      "url": "/blog",
+      "text": "Articles",
+      "url": "/articles",
+      "external": false
+    },
+    {
+      "text": "Notes",
+      "url": "/notes",
       "external": false
     },
     {

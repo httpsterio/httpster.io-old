@@ -7,19 +7,21 @@
         <h2 class="h4">{{ postListHeading }}</h2>
       {% endif %}
       <div class="l-post-list">
+
         {% for item in postListItems %}
-          <article class="post-stack-item">
-            <{{postListHeadingLevel}} class="h3">
-              {{ item.data.title }}
-            </{{postListHeadingLevel}}>
-            <p>
-              <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-            </p>
-            <p>
-              {{ item.templateContent | safe }}
-            </p>
+          <article class="h-entry t-page" class="l-container">
+            <div class="l-stack l-measure" >
+              <{{postListHeadingLevel}} class="h3">
+                {{ item.data.title }}
+              </{{postListHeadingLevel}}>
+              <p>
+                <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+              </p>
+                {{ item.templateContent | safe }}
+            </div>
           </article>
         {% endfor %}
+        
       </div>
     </div>
   </section>

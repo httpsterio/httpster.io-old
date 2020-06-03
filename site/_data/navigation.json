@@ -18,24 +18,9 @@
       "text": "About",
       "url": "/about",
       "external": false
-    },
-    {
-      "text": "Twitter",
-      "url": "https://twitter.com/httpsterio",
-      "external": true
     }
   ],
   "footer": [{
-      "text": "Home",
-      "url": "/",
-      "external": false
-    },
-    {
-      "text": "Blog",
-      "url": "/blog",
-      "external": false
-    },
-    {
       "text": "Twitter",
       "url": "https://twitter.com/httpsterio",
       "external": true

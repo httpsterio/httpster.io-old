@@ -1,12 +1,11 @@
-
 .l-stack {
   display: block;
 }
 
-.l-stack > * + * {
+.l-stack>*+* {
   margin-top: 1rem;
 }
 
-.l-stack--large > * + * {
-  margin-top: 2rem;
+.l-stack--large>*+* {
+  margin-top: 0rem;
 }

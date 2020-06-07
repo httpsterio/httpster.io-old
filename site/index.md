@@ -1,9 +1,9 @@
 ---
 layout: "layouts/home.njk"
-title: Heyo!
-postsHeading: Latest posts
-allPostsText: See all posts
+title: Sami's bastion
+postsHeading: Latest articles
+allPostsText: See all articles
 socialImage: ""
 ---
 
-I live and breathe coffee. It's unhealthy, please help.
+Hot takes by a human-shaped art experiment gone wrong.

@@ -19,9 +19,9 @@ Todo:
 
 [ ] design and write?
 
-[ ] figcaptions in parse-transform broken if they have title? Fix upstream. Sets img url to null
+[ ] figcaptions in parse-transform broken if they have title? Fix upstream. Sets img url to null (use data-src)
 
-[ ] svg anchor imgs in headers doesn't accept ch units. change to pixes or omit width and go with ex for height
+[ ] svg anchor imgs in headers doesn't accept ch units. change to pixes or omit width and go with ex for height (PR)
 
 Done: 
 

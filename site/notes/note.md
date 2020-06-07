@@ -2,7 +2,7 @@
 title: First proper text!
 date: "2020-06-03"
 tags:
-  - blogpost
+  - notes
 ---
 
 Sat Sri Akaal! This is me testing this note system. I might start syndicating these to Twitter in lieu of posting there directly. #BLM is happening at the moment in the world and I'm losing faith (implying I haven't already, hah) in the great big social media platforms.

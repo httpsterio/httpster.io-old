@@ -1,15 +1,22 @@
+name: Verify action
+
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/1 * * * *'
+
+env:
+  NODE_VERSION: 12.x
 
 jobs:
-  ping_site:
+  check:
     runs-on: ubuntu-latest
-    name: Ping the site
     steps:
-    - name: Check the site
-      id: hello
-      uses: srt32/uptime@master
+    - uses: actions/checkout@v2     
+    - name: Check cert for one
+      uses: ./
       with:
-        url-to-hit: "https://httpster.io"
-        expected-statuses: "200,301"
+        url: httpster.io.com
+        check-cert: no
+        max-cert-days-left: 1
+        port: 443

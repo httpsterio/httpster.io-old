@@ -3,7 +3,6 @@ const precacheResources = [
   '/',
   'index.html',
   'css/main.css',
-  'fonts/Inter-roman.var-subset.woff2?v=3.13',
   'blog/'
 ];
 

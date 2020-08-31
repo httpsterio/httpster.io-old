@@ -1,5 +1,5 @@
 ---
-title: First proper text!
+title: Hacker News and "experts" 
 date: "2020-08-31"
 tags:
   - notes

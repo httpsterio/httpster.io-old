@@ -7,12 +7,10 @@
 
 $BASE_UNIT: 100px;
 
-$FONT_NORMAL: 'Inter var',
-Helvetica,
-sans-serif;
-$FONT_HEADINGS: 'Inter var',
-Helvetica,
-sans-serif;
+$FONT_NORMAL: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+
+$FONT_HEADINGS: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
 $FONT_MONO: Consolas,
 Monaco,
 "Andale Mono",

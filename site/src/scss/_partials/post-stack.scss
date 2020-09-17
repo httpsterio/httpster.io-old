@@ -32,7 +32,7 @@ $l-stack-bp: 900px;
 }
 
 .post-stack-date {
-  font-size: $SCALE--1;
-  font-style: italic;
-  color: $COLOR_DARK;
+  font-size: $SCALE-0;
+  text-decoration: underline;
+  font-family: $FONT_MONO;
 }

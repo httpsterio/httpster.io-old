@@ -92,3 +92,8 @@ pre {
 pre code {
   background: transparent;
 }
+
+::selection {
+  background: $COLOR_ACCENT;
+  color: var(--THEME_BACKGROUND);
+}

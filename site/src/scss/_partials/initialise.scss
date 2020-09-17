@@ -50,7 +50,7 @@ body {
 }
 a {
   text-decoration: underline;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.15em;
   text-decoration-skip-ink: auto;
   cursor: pointer;
 }
@@ -58,6 +58,8 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
+  background: var(--THEME_COLOR);
+  color: var(--THEME_BACKGROUND);
 }
 
 input::-webkit-input-placeholder,

@@ -1,6 +1,6 @@
 ---
 layout: "layouts/home.njk"
-title: Sami's bastion
+title: http + hipster = httpster
 postsHeading: Latest articles
 allPostsText: See all articles
 socialImage: ""

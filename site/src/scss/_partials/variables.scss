@@ -5,13 +5,31 @@
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Inter-roman.var-subset.woff2?v=3.13") format("woff2");
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-weight:100-900;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/JetBrainsMono-Variable.ttf");
+}
+
 $BASE_UNIT: 100px;
 
-$FONT_NORMAL: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+$FONT_SYSTEM: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 
-$FONT_HEADINGS: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+$FONT_NORMAL: 'Inter Var';
 
-$FONT_MONO: Consolas,
+$FONT_HEADINGS: 'JetBrains Mono', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
+$FONT_MONO: 'JetBrains Mono', Consolas,
 Monaco,
 "Andale Mono",
 "Ubuntu Mono",

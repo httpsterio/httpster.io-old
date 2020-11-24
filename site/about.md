@@ -16,9 +16,13 @@ I'm also shite at but enjoy the following things - drinking speciality coffee, r
 
 ## Now
 
-Physical and mental health went down the shitter at the end of 2019 so I quit my job and started university in 2020. I'd go back if I could, but alas. I've finished approx 23 ECTS credits thus far and I'm starting a Full Stack course at Helsinki's University. I'm currently working on my debut EP / album and trying to start up my music label project as soon as I get the time. I've just learned a bit of C# and made my first MonoGame based project on it. I've also just finished beta testing an application for Adobe. 
+I'm currently fighting Kela to make it possible to use my studies as a rehabilitation measure, so that I don't have to stress about having no steady income. My health has been on a steady decline for a longer time now, but the past half year has been pretty hard on my mental and physical well-being so I'm kind of in a need of a break. I'm waiting for a CPAP-machine as I might have a low-grade sleep apnea. A small cyst or tumor was also found in my pituitary, so that's exciting.
 
-Updated on the 7th of June, 2020.
+I've finished 31 ECTS credits worth of lectures and courses with an average grade of 4.4/5 for my bachelor's degree in information systems.
+
+My podcast, Rautalanka (Wireframe in english), is also taking shape. I'm gearing up and I've booked a few guests already. Just waiting on my microphone stand so I can actually start recording.
+
+_Updated on the 24th of November, 2020_
 
 ## Uses
 
@@ -26,21 +30,26 @@ My uses list was inspired by [Dave Rupert](https://daverupert.com/uses) and [Wes
 
 ### Desktop PC
 
-__CPU:__ Intel Xeon 1231 v3 @3.4GHz
+__CPU:__ AMD Ryzen 7 3700X
 
-__RAM:__ 2x Kingston DDR3 @1333MHz
+__RAM:__ G.SKILL Ripjaws V @ 3600MHz
 
 __GPU:__ Nvidia GeForce GTX 970 4GB GDDR5
 
 __Display:__ Dell Ultrasharp U2515H
 
-__Motherboard:__ Gigabyte B85M-D3H
+__Motherboard:__ MSI MPG B550 GAMING PLUS
+
+__Power Supply:__ Seasonic Focus GX-650W
 
 __Mouse:__ Logitech MX Master 2S
 
 __Keyboard:__ Logitech G710
 
-Mostly built in 2014 on a budget. I'll be getting a Ryzen build shortly to update this.
+__Case:__ SilentiumPC Regnum RG4T
+
+
+My fiancée's laptop died so she got my previous desktop and I built a new Ryzen-based rig. I've been extremely satisfied.
 
 ### Laptop(s)
 
@@ -60,9 +69,11 @@ Aaaalso later
 
 __DAW:__ FL Studio 20.4 Signature Bundle
 
-__Audio Interface:__ Roland Quad-Capture
+__Audio Interface:__ Audient ID4
 
-__Speakers:__ KRK Rokit RP5 G2
+__Speakers:__ Yamaha HS7W
+
+__Microphone:__ Shure SM7B
 
 __Headphones:__ Sony MDR1000X
 

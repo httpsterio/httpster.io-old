@@ -15,7 +15,7 @@ text.txt is a text file containing the desired glyphs. Doesn't run on WSL, had t
 
 Todo:
 
-[ ] go through glyphs and add the required
+[ ] go through glyphs and add the required. add é
 
 [ ] design and write?
 

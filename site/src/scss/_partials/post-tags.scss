@@ -41,5 +41,6 @@
 .post-tag:hover,
 .post-tag:focus {
   text-decoration: underline;
-  background: #fff;
+  background: $COLOR_BLACK;
+  color: $COLOR_LIGHTER;
 }

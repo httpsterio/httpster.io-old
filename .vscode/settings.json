@@ -8,7 +8,5 @@
     "**/dist": true,
     "**/node_modules": true,
     "**/yarn.lock": true
-  },
-  "explorerExclude.backup": null,
-  "workbench.colorTheme": "Tomorrow Night Blue"
+  }
 }

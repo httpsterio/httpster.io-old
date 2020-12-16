@@ -12,6 +12,11 @@
       Posted by {{ authorName }}
       on <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
     {% endif %} (about a {{ helpers.getReadingTime(content) }} minute read).
+
+    {% if writingtime %}
+      This post took {{ writingtime }} to write.
+    {% endif %}
+
   </p>
 </div>
 {% endset %}
@@ -49,7 +54,7 @@
         </div>
         
         <div class="theme-primary theme-bg theme-color">
-          <div class="l-page">
+          <div class="l-page-body">
             <div class="l-container">
               <div class="l-stack l-measure" >
                 {{ content | safe }}

@@ -1,9 +1,9 @@
 $l-stack-bp: 900px;
-@media (min-width: $l-stack-bp) {
-  .l-post-stack {
-    --l-stack-flex-basis: calc(50% - #{$BASE_UNIT / 2});
-  }
-}
+// @media (min-width: $l-stack-bp) {
+//   .l-post-stack {
+//     --l-stack-flex-basis: calc(50% - #{$BASE_UNIT / 2});
+//   }
+// }
 
 .l-post-stack {
   margin-top: 0;

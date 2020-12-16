@@ -29,7 +29,7 @@ It feels like a dangerous trend though. I still find it astonishing that 30% (or
 
 ***sidenote —*** *I just stopped writing for a while to call another poster on Facebook a little edgelord and a piece of shit.*
 
-We have a term here in Finland called ***"kuplautuminen"*** which translates to ending up in an "echo chamber" either by accident or purpose. Let's say that my experient with trying to reason with the opposition might've come to an end now and I'm ready to return to my kupla. Even if I'm the one fighting and the one who could just ignore the people, it's still affecting my mental wellbeing and I'm getting increasingly exasperated.
+We have a term here in Finland called ***"kuplautuminen"*** which translates to ending up in an "echo chamber" either by accident or purpose. Let's say that my experiment with trying to reason with the opposition might've come to an end now and I'm ready to return to my kupla. Even if I'm the one fighting and the one who could just ignore the people, it's still affecting my mental wellbeing and I'm getting increasingly exasperated.
 
 Quick reminder to my readers, followers and people in my life — If you're a racist, don't believe in equal rights for every person or if you're anti science, vaccines or pro-Trump / Persut, could you kindly fuck out off my life?
 

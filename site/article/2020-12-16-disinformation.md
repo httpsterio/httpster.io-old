@@ -1,5 +1,5 @@
 ---
-title: Stress, disinformation & vaccinations
+title: Stress, fake news & vaccinations
 date: "2020-12-16"
 description: "Once again, hanging around social media is tedious and exasperating."
 writingtime: "2 hours"

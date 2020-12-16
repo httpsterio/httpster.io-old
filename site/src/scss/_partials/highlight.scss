@@ -69,10 +69,10 @@ pre[class*="language-"] {
   -o-tab-size: 4;
   tab-size: 4;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 pre[class*="language-"]::-moz-selection,

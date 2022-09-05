@@ -6,10 +6,20 @@ Pulled off all off the Keystone specific settings and imported some layout chang
 
 Font was subsetted with 
 ```
-glyphhanger .\text.txt --subset=Inter-roman.var.woff2 --formats=woff2 
+pyftsubset site/src/fonts/Inter-roman.var.woff2 --output-file=site/src/fonts/inter-subset.woff2 --flavor=woff2 --layout-features=kern --text-file=font-glyphs.txt
 ```
 
-text.txt is a text file containing the desired glyphs. Doesn't run on WSL, had to run on Windows.
+font-glyphs is a text file containing the desired glyphs.
+
+requires:
+```bash
+pip3 install pycryptodomex
+pip3 install websockets
+pip3 install mutagen
+pip3 install zopfli
+pip3 install brotli
+pip3 install fonttools
+```
 
 ## 
 
@@ -28,3 +38,4 @@ Done:
 [x] figure out why njk for-loops end up with whitespace from indentation
 
 [x] fix netlify node_env in netlify.toml
+

@@ -6,7 +6,7 @@ $bp-container: 1000px;
 
 @media (min-width: $bp-container) {
   .l-container {
-    --container-margin: #{$BASE_UNIT * 2};
+    --container-margin: #{$BASE_UNIT * 1};
   }
 }
 

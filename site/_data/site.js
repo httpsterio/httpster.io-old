@@ -11,11 +11,11 @@ module.exports = {
   theme: {
     primary: {
       background: "white",
-      text: "black",
+      text: "#0f0f0f",
       highlight: "#666",
     },
     secondary: {
-      background: "black",
+      background: "#0f0f0f",
       text: "white",
       highlight: "#666",
     },

@@ -8,21 +8,15 @@ description: I'm a full stack creative human who drinks too much coffee and gets
 
 ## About
 
-Statistics: 184cm tall, fat as fuck and nearing 30 years old. I have a fiancée with whom I do loads of fun projects with. Personally, I'm alright when it comes to UX design and research, visual design and I can get websites to work as well when I bang my head enough into a wall.
-
-I'm  _m u l t i r a c i a l_  so I'm morally and legally obligated to provide hot takes on current political issues.
+Statistics: I'm alright when it comes to UX design and research, visual design and I can get websites to work as well when I bang my head enough into a wall.
 
 I'm also shite at but enjoy the following things - drinking speciality coffee, running Linux and pen DevOps tings and music production. Basically I'm a one-man marketing agency.
 
 ## Now
 
-I'm currently fighting Kela to make it possible to use my studies as a rehabilitation measure, so that I don't have to stress about having no steady income. My health has been on a steady decline for a longer time now, but the past half year has been pretty hard on my mental and physical well-being so I'm kind of in a need of a break. I'm waiting for a CPAP-machine as I might have a low-grade sleep apnea. A small cyst or tumor was also found in my pituitary, so that's exciting.
+Coding, working, gaming and studying in Uni in a nutshell :)
 
-I've finished 31 ECTS credits worth of lectures and courses with an average grade of 4.4/5 for my bachelor's degree in information systems.
-
-My podcast, Rautalanka (Wireframe in english), is also taking shape. I'm gearing up and I've booked a few guests already. Just waiting on my microphone stand so I can actually start recording.
-
-_Updated on the 24th of November, 2020_
+_Updated on the 9th of November, 2022_
 
 ## Uses
 
@@ -30,9 +24,29 @@ My uses list was inspired by [Dave Rupert](https://daverupert.com/uses) and [Wes
 
 ### Desktop PC
 
+#### Main:
+__CPU:__ i7-12700k @ 3.6 GHz
+
+__RAM:__ Corsair Vengeance LPX 32GB 3600 MHz
+
+__GPU:__ MSI 3080 Ti Gaming X Trio
+
+__Display:__ Samsung 32"  165 Hz Odyssey G5
+
+__Motherboard:__ MSI PRO Z690-A
+
+__Power Supply:__ Fractal Design 850W Ion Gold
+
+__Mouse:__ Logitech MX Master 2S
+
+__Keyboard:__ Logitech G710
+
+__Case:__ Fractal Design Meshify S2
+
+#### Secondary
 __CPU:__ AMD Ryzen 7 3700X
 
-__RAM:__ G.SKILL Ripjaws V @ 3600MHz
+__RAM:__ 16GB G.SKILL Ripjaws V @ 3600MHz
 
 __GPU:__ Nvidia GeForce GTX 970 4GB GDDR5
 
@@ -53,9 +67,11 @@ My fiancée's laptop died so she got my previous desktop and I built a new Ryzen
 
 ### Laptop(s)
 
-__Main:__ Lenovo Ideapad S540 with i7, 16GB DDR4 and Nvidia GeForce MX250
+__Main:__ Lenovo Ideapad S540 with 8th gen i7, 16GB DDR4 and Nvidia GeForce MX250
 
-__Additional:__ Surface Pro 4, on the behalf to Microsoft Finland and Vesku
+__Server:__ Asus X550L with 4th gen i7 and 8GB DDR3
+
+<!-- __Additional:__ Surface Pro 4, on the behalf to Microsoft Finland and Vesku
 
 ### Programming
 
@@ -98,6 +114,6 @@ __Filter:__ Kähler Baristo
 
 __Filter:__ Technivorm Moccamaster KBG
 
-I've left off a bunch more obscure items meant for brewing coffee, maybe I'll expand on those later.
+I've left off a bunch more obscure items meant for brewing coffee, maybe I'll expand on those later. -->
 
 

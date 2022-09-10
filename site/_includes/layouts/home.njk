@@ -6,6 +6,9 @@
 {% set postListHeading = postsHeading %}
 {% set postListItems = collections.postFeed %}
 
+{% set projectListHeading = projectHeading %}
+{% set projectListItems = collections.projects %}
+
 {# Posts link #}
 {% if postListItems.length < collections.article.length %}
   {% set paginationNextText = allPostsText %}
@@ -21,6 +24,7 @@
 {% block content %}
   <div class="l-page">
     <div class="l-stack l-stack--large">
+      {% include "partials/project-list-home.njk" %}
       {% include "partials/post-list-home.njk" %}
       {% include "partials/pagination.njk" %}
     </div>

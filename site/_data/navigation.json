@@ -10,21 +10,12 @@
       "external": false
     },
     {
-      "text": "Notes",
-      "url": "/notes",
-      "external": false
-    },
-    {
       "text": "About",
       "url": "/about",
       "external": false
     }
   ],
-  "footer": [{
-      "text": "Twitter",
-      "url": "https://twitter.com/httpsterio",
-      "external": true
-    },
+  "footer": [
     {
       "text": "Feed",
       "url": "/feed.xml",

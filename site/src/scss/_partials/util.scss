@@ -33,7 +33,7 @@
 }
 
 .theme-color {
-  color: var(--THEME_COLOR, black);
+  color: var(--THEME_COLOR, $COLOR_BLACK);
 }
 
 .theme-hightlight {
@@ -71,7 +71,7 @@
     &:hover,
     &:focus {
       cursor: pointer;
-      background-color: $COLOR_ACCENT;
+      background-color: $COLOR_BLACK;
     }
   }
 }

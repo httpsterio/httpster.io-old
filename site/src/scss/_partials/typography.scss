@@ -94,6 +94,6 @@ pre code {
 }
 
 ::selection {
+  color: $COLOR_BLACK;
   background: $COLOR_ACCENT;
-  color: var(--THEME_BACKGROUND);
 }

@@ -17,7 +17,8 @@ $l-stack-bp: 900px;
 }
 
 .l-post-stack > * {
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   flex-basis: var(--l-stack-flex-basis, 100%);
   flex-shrink: 0;
 }
@@ -36,3 +37,39 @@ $l-stack-bp: 900px;
   text-decoration: underline;
   font-family: $FONT_MONO;
 }
+
+.l-project-stack {
+  margin: 0 0 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.l-project-stack > * {
+  margin-top: 1rem;
+  flex-shrink: 0;
+}
+
+.project-stack-item {
+  border-radius: 0.3rem;
+  list-style: none;
+  max-width: 30ch;
+  margin-left:1rem;
+  margin-right:1rem;
+  padding: 1rem;
+  background-color: $COLOR_BLACK;
+  color: $COLOR_WHITE;
+  transition: 0.35s ease;
+}
+
+.project-stack-item:hover{
+  background-color: $COLOR_ACCENT;
+  color: $COLOR_BLACK;
+  transition: 0.35s ease;
+  text-decoration: underline;
+}
+

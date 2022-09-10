@@ -1,0 +1,22 @@
+{% set projectListHeadingLevel = 'h3' if projectListHeading else 'h2' %}
+
+{% if projectListItems.length %}
+  <section class="l-container">
+    <div class="l-stack">
+        <h2 class="h3">Projects</h2>
+      <div class="l-project-stack">
+        {% for item in projectListItems %}
+          <a href="{{ item.data.url }}" aria-label="Check out {{ item.data.title }}">
+            <article class="project-stack-item">
+              <{{projectListHeadingLevel}} class="h4">{{ item.data.title }}
+              </{{projectListHeadingLevel}}>
+              {% if item.data.description %}
+                <p>{{item.data.description}}</p>
+              {% endif %}
+            </article>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

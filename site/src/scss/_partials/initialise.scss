@@ -55,11 +55,12 @@ a {
   cursor: pointer;
 }
 
-a:focus,
-a:hover {
+header a:focus,
+header a:hover {
   text-decoration: none;
-  background: var(--THEME_COLOR);
-  color: var(--THEME_BACKGROUND);
+  background: $COLOR_BLACK;
+  color: $COLOR_WHITE;
+  transition: 0.35s ease;
 }
 
 input::-webkit-input-placeholder,

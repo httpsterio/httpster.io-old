@@ -48,6 +48,12 @@ module.exports = function (config) {
     ].reverse();
   });
 
+  config.addCollection("projects", collection => {
+    return [
+      ...collection.getFilteredByGlob("./site/projects/*.md").filter(livePosts)
+    ];
+  });
+
   // TODO what is postfeed?
   config.addCollection("postFeed", collection => {
     return [

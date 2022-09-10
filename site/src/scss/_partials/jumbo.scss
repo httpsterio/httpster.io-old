@@ -10,20 +10,29 @@
   margin-top: 1rem;
 }
 
+.l-jumbo h1::selection {
+  color: $COLOR_BLACK;
+  background: $COLOR_ACCENT;
+  text-shadow: #FDB320 0.2rem 0.2rem;
+}
+
+
 .offset {
-  border: 0.25rem solid $COLOR_BLACK
+  border: 0.25rem solid $COLOR_BLACK;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .offset {  
-    transition: 0.25s;
+    transition: 0.35s ease;
     box-shadow: 
       0.5rem 0.5rem 0 0 $COLOR_BLACK;
     
     &:hover,
     &:focus {
       box-shadow: 
-        0.5rem -0.5rem 0 0 $COLOR_ACCENT;
+        0.5rem -0.5rem 0 0 $COLOR_BLACK;
+      color: $COLOR_WHITE;
+      background-color: $COLOR_BLACK;
     }
   }
 }
@@ -36,7 +45,7 @@
     &:hover,
     &:focus {
       box-shadow: 
-        0.5rem 0.5rem 0 0 $COLOR_ACCENT;
+        0.5rem 0.5rem 0 0 $COLOR_BLACK;
     }
   }
 }

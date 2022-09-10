@@ -10,8 +10,8 @@
   <p class="post-meta">
     {% if date %}
       Posted by {{ authorName }}
-      on <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
-    {% endif %} (about a {{ helpers.getReadingTime(content) }} minute read).
+      on the <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+    {% endif %}.
 
     {% if writingtime %}
       This post took {{ writingtime }} to write.

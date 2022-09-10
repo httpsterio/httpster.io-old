@@ -29,18 +29,22 @@
   display: inline-block;
   padding: 5px 10px;
   font-size: 0.8em;
-  background: $COLOR_LIGHTER;
+  color: $COLOR_WHITE;
+  border-radius: 0.2rem;
+  background: $COLOR_BLACK;
   border: solid 1px $COLOR_LIGHT;
   text-decoration: none;
   margin-right: 5px;
   margin-bottom: 10px;
+  transition: 0.35s ease;
 }
 
 
 
 .post-tag:hover,
 .post-tag:focus {
-  text-decoration: underline;
-  background: $COLOR_BLACK;
-  color: $COLOR_LIGHTER;
+  text-decoration: none;
+  background: $COLOR_ACCENT;
+  color: $COLOR_BLACK;
+  transition: 0.35s ease;
 }

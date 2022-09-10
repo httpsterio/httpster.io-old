@@ -57,10 +57,10 @@ a {
 
 header a:focus,
 header a:hover {
-  text-decoration: none;
-  background: $COLOR_BLACK;
-  color: $COLOR_WHITE;
+  text-decoration: underline;
+  color: $COLOR_ACCENT;
   transition: 0.35s ease;
+
 }
 
 input::-webkit-input-placeholder,

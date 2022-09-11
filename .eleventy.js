@@ -5,6 +5,7 @@ const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const dateFilter = require("./site/filters/date-filter.js");
 const markdownFilter = require("./site/filters/markdown-filter.js");
 const w3DateFilter = require("./site/filters/w3-date-filter.js");
+const { DateTime } = require("luxon")
 
 // Import transforms
 const htmlMinTransform = require("./site/transforms/html-min-transform.js");
@@ -19,6 +20,10 @@ module.exports = function (config) {
   config.addFilter("dateFilter", dateFilter);
   config.addFilter("markdownFilter", markdownFilter);
   config.addFilter("w3DateFilter", w3DateFilter);
+    // filter to format post date to year-month-day
+  config.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
+    })
 
   // Transforms
   config.addTransform("parse", parseTransform);

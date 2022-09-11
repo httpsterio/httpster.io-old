@@ -1,7 +1,7 @@
 ---
 layout: "layouts/home.njk"
-title: hey friends!
-postsHeading: Latest articles
+title: Hey friends!
+postsHeading: Writings
 allPostsText: See all articles
 socialImage: ""
 ---

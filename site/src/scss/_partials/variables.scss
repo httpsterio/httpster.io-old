@@ -37,8 +37,8 @@ monospace;
 
 $RATIO: 1.4;
 
-$SCALE--2: 1rem / $RATIO / $RATIO;
-$SCALE--1: 1rem / $RATIO;
+$SCALE--2: calc(1rem / $RATIO / $RATIO);
+$SCALE--1: calc(1rem / $RATIO);
 $SCALE-0: 1rem;
 $SCALE-1: 1rem * $RATIO;
 $SCALE-2: 1rem * $RATIO * $RATIO;

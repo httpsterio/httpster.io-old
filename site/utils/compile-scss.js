@@ -1,4 +1,4 @@
-var sass = require("node-sass");
+var sass = require("sass");
 var path = require("path");
 var CleanCSS = require("clean-css");
 require("css.escape");

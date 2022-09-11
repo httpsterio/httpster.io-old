@@ -70,9 +70,6 @@ module.exports = function (config) {
   config.addPassthroughCopy({
     "site/src/fonts": "/fonts"
   });
-  config.addPassthroughCopy({
-    "site/static/img": "/img"
-  });
 
   // Plugins
   config.addPlugin(rssPlugin);

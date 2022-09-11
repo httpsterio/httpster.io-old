@@ -12,9 +12,9 @@
             <article class="post-stack-item offset">
               <{{postListHeadingLevel}} class="h4">{{ item.data.title }}
               </{{postListHeadingLevel}}>
-              <p>
+              {# <p>
                 <time class="post-stack-date" datetime="{{ item.date | w3DateFilter }}">{{ item.date | postDate }}</time>
-              </p>
+              </p> #}
               {% if item.data.description %}
                 <p>{{item.data.description}}</p>
               {% endif %}

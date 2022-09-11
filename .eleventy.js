@@ -22,7 +22,7 @@ module.exports = function (config) {
   config.addFilter("w3DateFilter", w3DateFilter);
     // filter to format post date to year-month-day
   config.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy/MM/dd');
     })
 
   // Transforms

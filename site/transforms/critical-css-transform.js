@@ -1,4 +1,4 @@
-const critical = require("critical");
+const critical = import("critical");
 process.setMaxListeners(Infinity); // <== Sorry generating critical CSS is a resource hog!
 
 module.exports = async (value, outputPath) => {

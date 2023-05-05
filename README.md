@@ -22,19 +22,17 @@ pip3 install brotli
 pip3 install fonttools
 ```
 
-## 
-
-Todo:
-
-[ ] go through glyphs and add the required. add é
+## Todo:
 
 [ ] design and write?
 
-[ ] figcaptions in parse-transform broken if they have title? Fix upstream. Sets img url to null (use data-src)
+[?] figcaptions in parse-transform broken if they have title? Fix upstream. Sets img url to null (use data-src)
 
 [ ] svg anchor imgs in headers doesn't accept ch units. change to pixes or omit width and go with ex for height (PR)
 
-Done: 
+Done:
+
+[x] go through glyphs and add the required. add é
 
 [x] figure out why njk for-loops end up with whitespace from indentation
 

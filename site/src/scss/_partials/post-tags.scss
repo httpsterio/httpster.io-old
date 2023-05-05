@@ -12,17 +12,22 @@
 
 .l-home-tags {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: left;
   list-style: none;
   box-sizing: border-box;
 }
 
 .home-tag {
-  padding: 0.25rem;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  color: $COLOR_WHITE;
+  border-radius: 0.2rem;
+  background: $COLOR_BLACK;
   text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 700;
+  margin-right: 5px;
+  transition: 0.35s ease;
 }
 
 .post-tag {
@@ -48,3 +53,12 @@
   color: $COLOR_BLACK;
   transition: 0.35s ease;
 }
+
+.home-tag:hover,
+.home-tag:focus {
+  text-decoration: none;
+  background: $COLOR_SECONDARY;
+  color: $COLOR_BLACK;
+  transition: 0.35s ease;
+}
+

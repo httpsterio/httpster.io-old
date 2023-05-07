@@ -3,7 +3,7 @@ title: Subsetting fonts with Python 3 and FontTools
 date: "2023-05-06"
 description: ""
 writingtime: "null"
-draft:true
+draft: true
 tags:
   - fonts
   - webdev

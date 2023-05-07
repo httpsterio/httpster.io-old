@@ -2,6 +2,7 @@
 title: Embracing music genres
 date: "2015-06-22"
 description: "Understanding the usefulness of music genres for discovery and communication."
+writingtime: 20 minutes
 tags:
   - music
   - opinion

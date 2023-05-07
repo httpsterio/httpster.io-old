@@ -9,12 +9,12 @@ tags:
   - culture
 ---
 
-I have an exam in TJTA-1113 tomorrow. I need to study the course material as I've had an extremely frustrating experience assimilating the course syllabus. Of course, I could've put in more effort and not left it to the last moments to study, but the course material has been presented in an extremely inefficient way. At least from my perspective.
+I have an exam tomorrow, course code TJTA-1113 to be specific. I need to study the course material as I've had an extremely frustrating experience assimilating the course syllabus. Of course, I could've put in more effort and not left it to the last moments to study, but the course material has been presented in an extremely inefficient way. At least from my perspective.
 
 Hence, my stress making its' comeback. The year hasn't exactly been easy either and I think 2020 wasn't maybe such a good time to end my work contract and move onto social benefits for the foreseeable near future.
 
 ## Social media
-Despite all this, I found it necessary to write yet another vent at 5 am about social media and how it annoys the living shit out of me at the moment. Currently, I have at least a handful of friends who are spreading anti-vaccine memes and news on Facebook and I need to do my very best not to start an argument with them.
+Despite all this, I found it necessary to write yet another vent at 5 am about social media and how it annoys the living shit out of me at the moment. Currently, I have at least a handful of ~~friends~~ acquintances who are spreading anti-vaccine memes and news on Facebook and I need to do my very best not to start an argument with them.
 
 The year 2020 has no doubt been the weirdest, scariest, and most tiring year I've yet to live myself. We're all as a society spread out very thin and after almost a solid year of different types of lockdown, social distancing, and restrictions, normalcy would be very welcome. I get that. Despite that, we can't succumb to despair.
 

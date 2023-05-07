@@ -2,7 +2,7 @@ module.exports = {
   name: "httpster.io",
   shortDesc: "Sami is a digital native indieweb jargon generator",
   url: "https://httpster.io",
-  font: "/fonts/inter-subset.woff2",
+  font: "/fonts/inter3.19.var-subset.woff2",
   authorEmail: "sami@httpster.io",
   authorHandle: "@httpsterio",
   authorName: "Sami",

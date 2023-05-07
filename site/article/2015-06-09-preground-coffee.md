@@ -2,6 +2,7 @@
 title: Don't waste your money on preground coffee
 date: "2015-06-22"
 description: "Only silly people buy preground special coffee. Here's why."
+writingtime: 15 minutes
 tags:
   - coffee
   - opinion

@@ -81,6 +81,7 @@ module.exports = function (config) {
   // config.addPlugin(syntaxHighlight);
 
   // Watch for changes to my source files
+  config.setWatchJavaScriptDependencies(false);
   if (config.addWatchTarget) {
     config.addWatchTarget("site/src/scss");
     config.addWatchTarget("site/src/js");

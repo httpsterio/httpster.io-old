@@ -91,6 +91,11 @@ pre {
 
 pre code {
   background: transparent;
+  overflow-wrap: anywhere;
+}
+
+code {
+  overflow-wrap: anywhere;
 }
 
 ::selection {

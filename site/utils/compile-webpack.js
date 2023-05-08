@@ -6,11 +6,38 @@ const mfs = new MemoryFileSystem();
 const fs = require("fs");
 const path = require("path");
 
-const getWebpackFiles = compiler =>
+class ReplaceSizeOnlySourcePlugin {
+  apply(compiler) {
+    compiler.hooks.emit.tap("ReplaceSizeOnlySourcePlugin", (compilation) => {
+      for (const assetName in compilation.assets) {
+        const asset = compilation.assets[assetName];
+        if (asset.constructor.name === "SizeOnlySource" && asset._source) {
+          console.log("Replacing asset:", assetName);
+          // Use a try-catch block to handle possible errors when calling asset.source()
+          try {
+            compilation.assets[assetName] = asset._source;
+          } catch (error) {
+            console.error(`Failed to replace asset ${assetName}:`, error);
+          }
+        }
+      }
+    });
+  }
+}
+
+// .
+
+const getWebpackFiles = (compiler) =>
   new Promise((resolve, reject) => {
     compiler.outputFileSystem = mfs;
     compiler.inputFileSystem = fs;
-    compiler.resolvers.normal.fileSystem = mfs;
+
+    compiler.resolverFactory.hooks.resolver
+      .for("normal")
+      .tap("memoryFs", (resolver) => {
+        resolver.fileSystem = mfs;
+      });
+
     compiler.run((err, stats) => {
       if (err || stats.hasErrors()) {
         const errors =
@@ -21,12 +48,24 @@ const getWebpackFiles = compiler =>
       }
       const { compilation } = stats;
       const files = Object.keys(compilation.assets).reduce((acc, key) => {
-        acc[key] = compilation.assets[key].source();
+        const asset = compilation.assets[key];
+        try {
+          if (typeof asset.source === "function") {
+            acc[key] = asset.source();
+          }
+        } catch (error) {
+          if (error.message !== "Content and Map of this Source is not available (only size() is supported)") {
+            console.error(`Failed to get source for asset ${key}:`, error);
+          }
+        }
         return acc;
       }, {});
       resolve(files);
     });
   });
+
+
+
 
 const resolveEntries = targets =>
   Object.keys(targets).reduce((acc, key) => {
@@ -61,6 +100,12 @@ const getWebpackConfig = targets => ({
     ]
     // ToDo: add more rules and loaders?
   },
+  resolve: {
+    modules: [path.resolve(__dirname, "../../node_modules"), "node_modules"],
+    alias: {
+      lozad: path.resolve(__dirname, "../../node_modules/lozad/dist/lozad.min.js"),
+    },
+  },
   optimization: {
     minimize: true,
     minimizer: [
@@ -73,9 +118,10 @@ const getWebpackConfig = targets => ({
   plugins: [
     new webpack.EnvironmentPlugin({
       NODE_ENV: "production",
-      BUILD_NUMBER: Date.now()
-    })
-  ]
+      BUILD_NUMBER: Date.now(),
+    }),
+    new ReplaceSizeOnlySourcePlugin(),
+  ],
 });
 
 module.exports = {

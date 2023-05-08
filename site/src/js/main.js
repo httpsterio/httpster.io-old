@@ -1,6 +1,7 @@
 // Write your javascript here...
 // ES6 will be compiled with Webpack
 
+// import lozad from node modules
 import lozad from "lozad";
 
 const supportsLazyLoad = "loading" in document.createElement("img");

@@ -24,22 +24,23 @@ module.exports = function (value, outputPath) {
           const figure = document.createElement("figure");
           const figCaption = document.createElement("figcaption");
           figCaption.classList.add('image-caption');
-
+    
           figCaption.innerHTML = image.getAttribute("title");
-
+    
           image.removeAttribute("title");
-
+    
           figure.appendChild(image.cloneNode(true));
           figure.appendChild(figCaption);
-
+    
           image.replaceWith(figure);
         }
-
+    
         image.setAttribute("loading", "lazy");
-        image.setAttribute("data-src", image.src);
-        image.removeAttribute("src");
+        const dataSrc = image.src;
+        image.setAttribute("data-src", dataSrc);
       });
     }
+    
 
     const articleHeadings = [
       ...document.querySelectorAll("main article h2, main article h3"),

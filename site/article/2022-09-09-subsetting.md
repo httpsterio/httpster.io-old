@@ -4,6 +4,7 @@ date: "2023-05-09"
 description: "Shrink your fonts and make your site faster."
 writingtime: "4 hours"
 draft: false
+coverimg: "/img/subset.jpg"
 tags:
   - fonts
   - webdev

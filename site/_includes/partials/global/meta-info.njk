@@ -21,10 +21,8 @@
   <meta property="og:description" content="{{ metaDescription }}"/>
 {% endif %}
 
-{# {% set socialImage = social_image if social_image else site.socialImage %} #}
-
 {% if coverimg %}
-  <meta property="og:image" content="{{ coverimg }}"/>
+  <meta property="og:image" content="{{ site.url + coverimg }}"/>
   <meta name="twitter:image" content="{{ coverimg }}"/>
   <meta property="og:image:alt" content="Page image for {{ site.name }}"/>
   <meta name="twitter:image:alt" content="Page image for {{ site.name }}"/>

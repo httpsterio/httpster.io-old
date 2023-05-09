@@ -1,8 +1,8 @@
 ---
 title: Subsetting fonts with Python 3 and FontTools
-date: "2023-05-06"
-description: ""
-writingtime: "null"
+date: "2023-05-09"
+description: "Shrink your fonts and make your site faster."
+writingtime: "4 hours"
 draft: false
 tags:
   - fonts
@@ -18,19 +18,21 @@ tags:
 
 ## Forewords
 
-I'm an avid fan of the static site generator Eleventy. In fact, this site was built with it _(and the lovely starter project Supermaya by [Mike Riethmuller](https://github.com/MadeByMike/supermaya))_. While trying to get my site to raise in the ranks on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/httpster-io/), I did my darnedest to optimize every aspect of the site. One of the things I did was to subset the fonts I use on the site. This is a short post on why and how I did it.
+I'm an avid fan of the static site generator Eleventy. In fact, this site was built with it _(and the lovely starter project Supermaya by [Mike Riethmuller](https://github.com/MadeByMike/supermaya))_. While trying to get my site to raise in the ranks on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/httpster-io/), I did my darnedest to optimize every aspect of the site. One of the things I did was to subset the fonts I use on the site. In this brief guide, I'll share why and how I went about it.
 
 ## What is font subsetting and why should I care?
 
-Don't you just hate it when pages are slow to load? Even more annoying is when a page seems to have loaded but the proper fonts come in with a delay and the text jumps around. This is because the browser has to download the font files before it can render the text properly. Larger fonts take a longer time to download than a small font, even if the larger font is only used for a few characters.
+Isn't it just irritating when pages take ages to load? Even more annoying is when a page seems to have loaded but the proper fonts come in with a delay and the text jumps around. This is because the browser has to download the font files before it can render the text properly. Larger fonts take a longer time to download than a small font, even if the larger font is only used for a few characters.
 
-Subsetting a font means removing all of the extra symbols and characters from the font file that you don't need and generating a new, subsetted font file with just the necessary characters. This new font file is much smaller than the original and will download faster. If you want to take people with slower internet speeds into consideration or you want to make your site more green, it certainly doesn't hurt to optimize your site's overall data footprint.
+Subsetting a font means removing all of the extra symbols and characters from the font file that you don't need and generating a new, subsetted font file with just the necessary characters. This new font file is much smaller than the original and will download faster. If you want to take people with slower internet speeds into consideration or you want to make your site more green, optimising your site's overall data footprint is undoubtedly beneficial.
 
 ## What are my options?
 
-There's mainly two proper ways of subsetting a font. The first one would be to use an online tool like Font Squirrel's [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator). It's a great tool, but it doesn't for example support woff2 fonts nor does it really help you in any ways.
+There's mainly two proper ways of subsetting a font. The first one would be to use an online tool like Font Squirrel's [Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator). It's a brilliant tool, but it doesn't support woff2 fonts, for instance, and doesn't offer much additional assistance.
 
-The other option would be to use a command line tool like [Glyphhanger](https://github.com/zachleat/glyphhanger) by Zach Leatherman or FontTools directly. Glyphhanger uses FontTools under the hood and provides some fun extra features like the ability to scan web pages for used characters and to gather all the used characters and symbols automatically. Glyphhanger is a great tool, but it's a bit of a hassle to install and use. I've had some issues with it in the past, so I personally prefer to use FontTools directly. Less dependencies, less things to break.
+Alternatively, you could use a command line tool such as [Glyphhanger](https://github.com/zachleat/glyphhanger) by Zach Leatherman or FontTools directly. Glyphhanger uses FontTools under the hood and provides some fun extra features like the ability to scan web pages for used characters and to gather all the used characters and symbols automatically. 
+
+Glyphhanger is a great tool, but it's a bit of a hassle to install and use. I've had some issues with it in the past, so I personally prefer to use FontTools directly. Glyphhanger uses a Chromium webdriver to scan web pages for used characters and I've had trouble with running webdriver based tools on WSL, hence me going the FontTools route. Less dependencies, less things to break.
 
 If you're on MacOS and want to have a go with Glyphhanger, I can strongly recommend Sara Soueidan's article [How I set up Glyphhanger on MacOS for optimizing and converting font files for the Web](https://www.sarasoueidan.com/blog/glyphhanger/). It's a great article even if you're not a Mac user.
 
@@ -39,7 +41,7 @@ If you're on MacOS and want to have a go with Glyphhanger, I can strongly recomm
 You'll need two things—A terminal emulator and Python3.
 
 ### 1. Make sure you have python3 installed
-If you're on Mac or Linux, you can open your default terminal and type `which python3` and if you see something like `/usr/bin/python3` or similar, you're good to go. If not, go and install it. 
+If you're using a Mac or Linux, you can open your default terminal and type `which python3` and if you see something like `/usr/bin/python3` or similar, you're good to go. If not, go and install it. 
 
 If you're on Windows, you'll most likely need to install Python3. You can download it from [python.org](https://www.python.org/downloads/). Make sure to check the box that says "Add Python 3.x to PATH" during the installation.
 
@@ -76,4 +78,13 @@ You have all the tools installed, your font in an woff2, otf or ttf format and a
 
 Remember to replace `YOURFONT` with the actual name of the font you're using and replace `kern` with the features you want to keep. If you want to keep multiple features, separate them with a comma like this: `--layout-features=kern,liga`. If you simply want to keep all of the layout features, you can also just type `--layout-features=*` instead.
 
-If you're using a ttf or otf font, you can replace `--flavor=woff2` with `--flavor=woff` or `--flavor=truetype` respectively, but for webfonts, woff2 is most efficient.
+
+## Afterwords
+
+There you have it. Personally, I managed to reduce my font load from 472kb to 46kb, which reduced my frontpage's loadsize by a whopping __84.8%__.
+
+If you want to learn more about FontTools, you can check out the [official documentation](https://fonttools.readthedocs.io/en/latest/). If you want to learn more about subsetting fonts, I can recommend [this article](https://www.zachleat.com/web/subset-webfonts/) by Zach Leatherman.
+
+Thanks for reading! If you enjoyed this tutorial, holler at me on Mastodon [@sami@toot.wales](https://toot.wales/@sami) or you can shoot me an email firstname@websitename. 
+
+Take care, stay happy and keep being brilliant!

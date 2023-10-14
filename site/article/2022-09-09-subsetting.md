@@ -50,7 +50,7 @@ Now, you're ready to install FontTools.
 ### 2. Installing FontTools and Brotli
 You can install FontTools by opening your terminal and typing `pip3 install fonttools brotli`. If you get an error message, you might need to install `pip3` or use `pip` instead. If you're on Windows, you might need to use `py -m pip install fonttools brotli`. Brotli is required when processing woff2 files, FontTools will throw an error if you don't have it installed.
 
-If you're using Ubuntu on WSL, you might also have to install `pycryptodomex`, `websockets`, `mutagen` and `zopfli` with `pip3 install pycryptodomex websockets mutagen zopfli`.
+If you're using Ubuntu on WSL, you might also have to install `pycryptodomex`, `websockets`, `mutagen` and `zopfli` with `pip3 install pycryptodomex websockets mutagen zopfli`
 
 ### 3. Create a file with the characters you want to keep
 
